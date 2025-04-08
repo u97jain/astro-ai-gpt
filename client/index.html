@@ -1,92 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: #f8f9fa;
-        margin: 0;
-        padding: 2rem;
-        text-align: center;
-      }
-    
-      h1 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        color: #333;
-      }
-    
-      form {
-        max-width: 500px;
-        margin: auto;
-        background: white;
-        padding: 2rem;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-      }
-    
-      input, select, button {
-        margin-top: 1rem;
-        padding: 0.75rem;
-        font-size: 1rem;
-        width: auto;
-        min-width: 250px;
-        max-width: 100%;
-        box-sizing: border-box;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-      }
-    
-      button {
-        background-color: #1e293b;
-        color: white;
-        cursor: pointer;
-        border: none;
-      }
-    
-      button:hover {
-        background-color: #0f172a;
-      }
-    
-      #output {
-        margin-top: 2rem;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1rem;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        background: #ffffff;
-        white-space: pre-line;
-        text-align: left;
-        font-size: 1rem;
-        line-height: 1.6;
-        max-height: 400px;
-        overflow-y: auto;
-      }
-    </style>    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astro AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>🔮 Astro AI</h1>
+  <div class="container">
+    <h1 class="title">🔮 Astro AI</h1>
+    <div class="form-container">
+      <input type="text" id="name" placeholder="Your Name" />
+      <input type="date" id="dob" placeholder="Date of Birth" />
+      <input type="time" id="time" placeholder="Time of Birth" />
+      <input type="text" id="place" placeholder="Place of Birth" />
 
-  <input type="text" id="name" placeholder="Your Name" />
-  <input type="date" id="dob" placeholder="Date of Birth" />
-  <input type="time" id="time" placeholder="Time of Birth" />
-  <input type="text" id="place" placeholder="Place of Birth" />
+      <select id="focus">
+        <option value="career">Career</option>
+        <option value="love">Love</option>
+        <option value="family">Family</option>
+        <option value="grief">Grief / Loss</option>
+        <option value="self">Self / Life Path</option>
+      </select>
 
-  <select id="focus">
-    <option value="career">Career</option>
-    <option value="love">Love</option>
-    <option value="family">Family</option>
-    <option value="grief">Grief / Loss</option>
-    <option value="self">Self / Life Path</option>
-  </select>
-
-  <button onclick="getReading()">Get My Reading</button>
-
-  <div id="output">Your reading will appear here...</div>
-
+      <button onclick="getReading()">Get My Reading</button>
+    </div>
+    <div id="output">Your reading will appear here...</div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
