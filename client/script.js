@@ -9,7 +9,7 @@ async function getReading() {
     outputDiv.innerText = "Talking to the stars... 🌠";
   
     try {
-      const response = await fetch("http://localhost:3000/astro", {
+      const response = await fetch("https://astro-ai-backend-29ze.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, dob, time, place, focus })
