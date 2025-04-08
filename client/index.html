@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Astro AI - Soul Insights</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f0e8;
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #444;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #222;
+    }
+
+    #output {
+      margin-top: 2rem;
+      white-space: pre-line;
+      background: white;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Astro AI – Soul Insights ✨</h1>
+
+  <input type="text" id="name" placeholder="Your Name" />
+  <input type="date" id="dob" placeholder="Date of Birth" />
+  <input type="time" id="time" placeholder="Time of Birth" />
+  <input type="text" id="place" placeholder="Place of Birth" />
+
+  <select id="focus">
+    <option value="career">Career</option>
+    <option value="love">Love</option>
+    <option value="family">Family</option>
+    <option value="grief">Grief / Loss</option>
+    <option value="self">Self / Life Path</option>
+  </select>
+
+  <button onclick="getReading()">Get My Reading</button>
+
+  <div id="output">Your reading will appear here...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
