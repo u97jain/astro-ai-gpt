@@ -7,7 +7,7 @@
   
   body {
     font-family: 'Inter', sans-serif;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    background: radial-gradient(ellipse at bottom, #436fa1 0%, #132a9b 100%);
     color: #f1f1f1;
     min-height: 100vh;
     overflow-x: hidden;
@@ -75,7 +75,7 @@
   }
   
   button {
-    background-color: #1e293b;
+    background-color: #0e377a;
     color: white;
     border: none;
     cursor: pointer;
@@ -83,7 +83,7 @@
   }
   
   button:hover {
-    background-color: #0f172a;
+    background-color: #5c5e64;
   }
   
   /* Output Box Styling */
@@ -126,5 +126,19 @@
   @keyframes fadeInDown {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
+  }
+
+  #music-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 1000;
   }
   

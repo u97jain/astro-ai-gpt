@@ -4,7 +4,10 @@ async function getReading() {
     const time = document.getElementById("time").value;
     const place = document.getElementById("place").value;
     const focus = document.getElementById("focus").value;
-  
+
+    const music = document.getElementById("bg-music");
+    const musicToggle = document.getElementById("music-toggle");
+
     const outputDiv = document.getElementById("output");
     outputDiv.innerText = "";
     const loader = document.createElement("div");
@@ -31,5 +34,16 @@ async function getReading() {
         console.error("Client error:", error);
         outputDiv.innerText = "Failed to connect to the server.";
     }
+
+    musicToggle.addEventListener("click", () => {
+        if (music.paused) {
+          music.play();
+          musicToggle.textContent = "🔊";
+        } else {
+          music.pause();
+          musicToggle.textContent = "🔇";
+        }
+      });
+      
   }
   
