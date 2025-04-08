@@ -41,36 +41,47 @@ git clone https://github.com/u97jain/astro-ai-gpt.git
 cd astro-ai-gpt
 ```
 
-2. **Create a .env file in root (same level as server.js)**
+2. **Create a `.env` file in root** (same level as `server.js`)
 
-```OPENAI_API_KEY=your-api-key-here```
+```env
+OPENAI_API_KEY=your-api-key-here
+```
 
-3. **Install Dependencies**
-```npm install```
+3. **Install dependencies**
 
-4. **Run the Server**
-```node server.js```
+```bash
+npm install
+```
 
-5. **Open client/index.html in your browser**
+4. **Run the server**
+
+```bash
+node server.js
+```
+
+5. **Open `client/index.html` in your browser**
 
 You're good to go!
 
+---
 
-🧙‍♂️ Author
-Built with heart by @u97jain
+### 🧙‍♂️ Author
 
-🔭 Future Features (v2 Ideas)
-📄 Downloadable PDF readings
+Built with heart by [Umang Jain](https://github.com/u97jain)
 
-📅 Life event timelines
+---
 
-📬 Email-saved sessions
+### 🔭 Future Features (v2 Ideas)
 
-📈 Personalized mood calendar
+- 📄 Downloadable PDF readings
+- 📅 Life event timelines
+- 📬 Email-saved sessions
+- 📈 Personalized mood calendar
+- 🧬 Vedic + Western astro blending
 
-🧬 Vedic + Western astro blending
+---
 
-⭐ Like this project?
-Give it a star on GitHub to show your support!
+### ⭐ Like this project?
+
+Give it a star on GitHub to show your support!  
 Let's bring the cosmos to code ✨
-
